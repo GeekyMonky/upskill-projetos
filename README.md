@@ -1,8 +1,8 @@
-\# Projetos da Disciplina
+\# Projetos do Curso
 
 
 
-Repositório com os projetos desenvolvidos ao longo da disciplina.
+Repositório com os projetos desenvolvidos ao longo do curso.
 
 
 
