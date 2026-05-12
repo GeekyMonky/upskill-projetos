@@ -11,7 +11,6 @@ Adaptação do exemplo `WebAPI2` fornecido pelo professor.
 ## Tecnologias
 
 
-
 - **C#** / **.NET 10**
 
 - **ASP.NET Core** (Minimal API)
@@ -22,6 +21,16 @@ Adaptação do exemplo `WebAPI2` fornecido pelo professor.
 
 - **DALPro** — classe de acesso a dados (incluída em `LibDB/DALPro.cs`)
 
+
+## Pacotes NuGet utilizados
+
+
+| Pacote | Versão | Para que serve |
+|---|---|---|
+| `Microsoft.Data.SqlClient` | ~6.x | Ligação ao SQL Server |
+| `Swashbuckle.AspNetCore` | ~6.6.x | Swagger / OpenAPI |
+
+> 💡 Os pacotes são restaurados automaticamente pelo Visual Studio ao abrir a solução. Se precisares restaurar manualmente: botão direito na solução → **Restore NuGet Packages**.
 
 
 ## Estrutura do projeto
