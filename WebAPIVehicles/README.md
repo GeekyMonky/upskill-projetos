@@ -77,10 +77,7 @@ Se a tua instância de SQL Server **não** for `localhost`, edita o ficheiro
 `WebAPIVehicles/appsettings.json` e ajusta o campo `Server=...`.
 
 
-
 ### 3. Correr a aplicação
-
-
 
 - Abrir `WebAPIVehicles.sln` no Visual Studio 2022/2026
 
@@ -92,53 +89,32 @@ Se a tua instância de SQL Server **não** for `localhost`, edita o ficheiro
 
 ### 4. Testar via Swagger
 
-
-
 Acrescentar `/swagger` ao URL — abre uma interface para testar todos os endpoints.
 
 
 
 ## Endpoints
 
-
-
 | Método | Rota | Descrição |
-
 |---|---|---|
-
 | `GET` | `/vehicles` | Lista todos os veículos |
-
 | `GET` | `/vehicles/{id}` | Obtém um veículo por id |
-
 | `POST` | `/vehicles` | Cria um veículo novo |
-
 | `PUT` | `/vehicles/{id}` | Atualiza um veículo |
-
 | `DELETE` | `/vehicles/{id}` | Apaga um veículo |
 
 
 
 ## Modelo de dados
 
-
-
 Tabela `Vehicles`:
 
-
-
 | Coluna | Tipo | Notas |
-
 |---|---|---|
-
 | `VehicleID` | INT | Chave primária, auto-incremento |
-
 | `Brand` | NVARCHAR(50) | Obrigatório |
-
 | `Model` | NVARCHAR(50) | Obrigatório |
-
 | `Year` | INT | Obrigatório |
-
 | `LastInspection` | DATETIME | Opcional |
-
 | `Sold` | BIT | 0 = não vendido, 1 = vendido |
 
