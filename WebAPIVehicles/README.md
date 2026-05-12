@@ -27,8 +27,8 @@ Adaptação do exemplo `WebAPI2` fornecido pelo professor.
 
 | Pacote | Versão | Para que serve |
 |---|---|---|
-| `Microsoft.Data.SqlClient` | ~6.x | Ligação ao SQL Server |
-| `Swashbuckle.AspNetCore` | ~6.6.x | Swagger / OpenAPI |
+| `Microsoft.Data.SqlClient` | 7.0.1 | Ligação ao SQL Server |
+| `Swashbuckle.AspNetCore` | 10.1.7 | Swagger / OpenAPI |
 
 > 💡 Os pacotes são restaurados automaticamente pelo Visual Studio ao abrir a solução. Se precisares restaurar manualmente: botão direito na solução → **Restore NuGet Packages**.
 
