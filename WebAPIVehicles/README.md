@@ -1,4 +1,4 @@
-\# WebAPIVehicles
+# WebAPIVehicles
 
 
 
@@ -8,23 +8,23 @@ Adaptação do exemplo `WebAPI2` fornecido pelo professor.
 
 
 
-\## Tecnologias
+## Tecnologias
 
 
 
-\- \*\*C#\*\* / \*\*.NET 10\*\*
+- **C#** / **.NET 10**
 
-\- \*\*ASP.NET Core\*\* (Minimal API)
+- **ASP.NET Core** (Minimal API)
 
-\- \*\*SQL Server\*\* + \*\*Microsoft.Data.SqlClient\*\*
+- **SQL Server** + **Microsoft.Data.SqlClient**
 
-\- \*\*Swagger\*\* (Swashbuckle.AspNetCore)
+- **Swagger** (Swashbuckle.AspNetCore)
 
-\- \*\*DALPro\*\* — classe de acesso a dados (incluída em `LibDB/DALPro.cs`)
+- **DALPro** — classe de acesso a dados (incluída em `LibDB/DALPro.cs`)
 
 
 
-\## Estrutura do projeto
+## Estrutura do projeto
 
 
 
@@ -46,19 +46,19 @@ WebAPIVehicles/
 
 
 
-\## Como correr
+## Como correr
 
 
 
-\### 1. Criar a base de dados
+### 1. Criar a base de dados
 
 
 
-1\. Abrir o ficheiro `database.sql` no SQL Server Management Studio
+1. Abrir o ficheiro `database.sql` no SQL Server Management Studio
 
-2\. Ligar a uma instância local de SQL Server
+2. Ligar a uma instância local de SQL Server
 
-3\. Executar (F5)
+3. Executar (F5)
 
 
 
@@ -66,29 +66,29 @@ Isto cria a base de dados `VehiclesDB` e insere 5 veículos de teste.
 
 
 
-\### 2. Configurar a connection string (se necessário)
+### 2. Configurar a connection string (se necessário)
 
 
 
-Se a tua instância de SQL Server \*\*não\*\* for `localhost`, edita o ficheiro
+Se a tua instância de SQL Server **não** for `localhost`, edita o ficheiro
 
 `WebAPIVehicles/appsettings.json` e ajusta o campo `Server=...`.
 
 
 
-\### 3. Correr a aplicação
+### 3. Correr a aplicação
 
 
 
-\- Abrir `WebAPIVehicles.sln` no Visual Studio 2022/2026
+- Abrir `WebAPIVehicles.sln` no Visual Studio 2022/2026
 
-\- Carregar em ▶ (run)
+- Carregar em ▶ (run)
 
-\- O navegador abre em `https://localhost:7XXX`
+- O navegador abre em `https://localhost:7XXX`
 
 
 
-\### 4. Testar via Swagger
+### 4. Testar via Swagger
 
 
 
@@ -96,7 +96,7 @@ Acrescentar `/swagger` ao URL — abre uma interface para testar todos os endpoi
 
 
 
-\## Endpoints
+## Endpoints
 
 
 
@@ -116,7 +116,7 @@ Acrescentar `/swagger` ao URL — abre uma interface para testar todos os endpoi
 
 
 
-\## Modelo de dados
+## Modelo de dados
 
 
 
