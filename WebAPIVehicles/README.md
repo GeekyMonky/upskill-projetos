@@ -27,23 +27,16 @@ Adaptação do exemplo `WebAPI2` fornecido pelo professor.
 ## Estrutura do projeto
 
 
-
+```
 WebAPIVehicles/
-
 ├── LibDB/                     # DALPro — acesso à base de dados
-
 ├── Models/                    # Entidades (Vehicle)
-
 ├── DTOs/                      # Data Transfer Objects
-
 ├── Repositories/              # Acesso à BD (interface + implementação)
-
 ├── Services/                  # Lógica de negócio + transações
-
 ├── Program.cs                 # Endpoints, DI, Swagger
-
 └── appsettings.json           # Connection string
-
+```
 
 
 ## Como correr
