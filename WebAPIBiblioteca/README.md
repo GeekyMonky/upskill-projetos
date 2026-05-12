@@ -15,6 +15,20 @@ Adaptação do exemplo `WebAPI5` fornecido pelo professor, com autenticação JW
 - **CORS** habilitado
 - **DALPro** — classe de acesso a dados (incluída em `LibDB/DALPro.cs`)
 
+## Pacotes NuGet utilizados
+
+| Pacote | Versão | Para que serve |
+|---|---|---|
+| `Microsoft.Data.SqlClient` | 7.0.1 | Ligação ao SQL Server |
+| `Swashbuckle.AspNetCore` | 6.6.2 | Swagger / OpenAPI (suporte a JWT) |
+| `Microsoft.AspNetCore.Authentication.JwtBearer` | 10.0.7 | Autenticação JWT |
+| `Serilog.AspNetCore` | 10.0.0 | Logging estruturado |
+| `Serilog.Sinks.File` | 7.0.0 | Output de logs para ficheiro |
+
+> 💡 Os pacotes são restaurados automaticamente pelo Visual Studio ao abrir a solução. Se precisares restaurar manualmente: botão direito na solução → **Restore NuGet Packages**.
+>
+> ⚠️ A versão do `Swashbuckle.AspNetCore` está fixada em **6.6.2** intencionalmente. Versões mais recentes (v8+) usam `Microsoft.OpenApi v2.x` que mudou os namespaces, causando erros de compilação no código atual.
+
 ## Estrutura
 
 ```
