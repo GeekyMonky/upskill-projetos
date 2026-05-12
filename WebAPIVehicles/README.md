@@ -1,6 +1,7 @@
 # WebAPIVehicles
 
 Web API em ASP.NET Core (.NET 10) para gerir uma frota de veículos.
+
 Adaptação do exemplo `WebAPI2` fornecido pelo professor.
 
 ## Tecnologias
@@ -20,7 +21,7 @@ Adaptação do exemplo `WebAPI2` fornecido pelo professor.
 
 > 💡 Os pacotes são restaurados automaticamente pelo Visual Studio ao abrir a solução. Se precisares restaurar manualmente: botão direito na solução → **Restore NuGet Packages**.
 
-## Estrutura do projeto## Como correr
+## Estrutura do projeto
 
 ```
 WebAPIVehicles/
@@ -32,6 +33,8 @@ WebAPIVehicles/
 ├── Program.cs                 # Endpoints, DI, Swagger
 └── appsettings.json           # Connection string
 ```
+
+## Como correr
 
 ### 1. Criar a base de dados
 
