@@ -58,21 +58,14 @@ WebAPIBiblioteca/
 
 ## ⚠️ Nota sobre segurança
 
-Este projeto inclui o `appsettings.json` no repositório, com chave JWT e
-connection string, **para facilitar a avaliação do professor** (basta
-clonar e correr).
+Este projeto inclui o `appsettings.json` no repositório, com chave JWT e connection string, **para facilitar a avaliação do professor** (basta clonar e correr).
 
 Em ambiente de produção, esta abordagem **não seria recomendada**:
 
-- A chave JWT (`App:JWT:SECRET_KEY`) deveria estar em variáveis de
-  ambiente ou num cofre seguro (ex: Azure Key Vault)
-- O `appsettings.json` real ficaria fora do repositório, e seria
-  versionado apenas um `appsettings.example.json` com valores fictícios
-- Credenciais de utilizadores (no exemplo, `admin/123` em `Program.cs`)
-  seriam guardadas numa tabela de utilizadores com passwords hashed,
-  nunca hardcoded
-- A regra geral: **nunca commitar segredos para um repositório,
-  especialmente público**.
+- A chave JWT (`App:JWT:SECRET_KEY`) deveria estar em variáveis de ambiente ou num cofre seguro (ex: Azure Key Vault)
+- O `appsettings.json` real ficaria fora do repositório, e seria versionado apenas um `appsettings.example.json` com valores fictícios
+- Credenciais de utilizadores (no exemplo, `admin/123` em `Program.cs`) seriam guardadas numa tabela de utilizadores com passwords hashed, nunca hardcoded
+- A regra geral: **nunca commitar segredos para um repositório, especialmente público**
 
 ## Como correr
 
@@ -103,9 +96,11 @@ Editar `WebAPIBiblioteca/appsettings.json` e ajustar `Server=...` se a instânci
 #### Fluxo de teste
 
 1. `POST /login` com body:
+
 ```json
-   { "username": "admin", "password": "123" }
+    { "username": "admin", "password": "123" }
 ```
+
 2. Copiar o `token` da resposta
 3. Clicar em **Authorize** no Swagger e colar o token
 4. Testar os endpoints protegidos
@@ -121,6 +116,7 @@ Editar `WebAPIBiblioteca/appsettings.json` e ajustar `Server=...` se a instânci
 ### CRUD por entidade (5 endpoints cada)
 
 `GET`, `GET /{id}`, `POST`, `PUT`, `DELETE` para:
+
 - `/temas`
 - `/nucleos`
 - `/leitores`
@@ -162,6 +158,7 @@ Editar `WebAPIBiblioteca/appsettings.json` e ajustar `Server=...` se a instânci
 ## Logs
 
 Serilog escreve simultaneamente para:
+
 - **Consola**
 - **Ficheiro**: `logs/log.txt` (rotaciona diariamente)
 
