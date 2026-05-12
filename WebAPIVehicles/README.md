@@ -1,29 +1,17 @@
 # WebAPIVehicles
 
-
-
 Web API em ASP.NET Core (.NET 10) para gerir uma frota de veículos.
-
 Adaptação do exemplo `WebAPI2` fornecido pelo professor.
-
-
 
 ## Tecnologias
 
-
 - **C#** / **.NET 10**
-
 - **ASP.NET Core** (Minimal API)
-
 - **SQL Server** + **Microsoft.Data.SqlClient**
-
 - **Swagger** (Swashbuckle.AspNetCore)
-
 - **DALPro** — classe de acesso a dados (incluída em `LibDB/DALPro.cs`)
 
-
 ## Pacotes NuGet utilizados
-
 
 | Pacote | Versão | Para que serve |
 |---|---|---|
@@ -32,9 +20,7 @@ Adaptação do exemplo `WebAPI2` fornecido pelo professor.
 
 > 💡 Os pacotes são restaurados automaticamente pelo Visual Studio ao abrir a solução. Se precisares restaurar manualmente: botão direito na solução → **Restore NuGet Packages**.
 
-
-## Estrutura do projeto
-
+## Estrutura do projeto## Como correr
 
 ```
 WebAPIVehicles/
@@ -47,51 +33,27 @@ WebAPIVehicles/
 └── appsettings.json           # Connection string
 ```
 
-
-## Como correr
-
-
-
 ### 1. Criar a base de dados
 
-
-
 1. Abrir o ficheiro `database.sql` no SQL Server Management Studio
-
 2. Ligar a uma instância local de SQL Server
-
 3. Executar (F5)
-
-
 
 Isto cria a base de dados `VehiclesDB` e insere 5 veículos de teste.
 
-
-
 ### 2. Configurar a connection string (se necessário)
 
-
-
-Se a tua instância de SQL Server **não** for `localhost`, edita o ficheiro
-
-`WebAPIVehicles/appsettings.json` e ajusta o campo `Server=...`.
-
+Se a tua instância de SQL Server **não** for `localhost`, edita o ficheiro `WebAPIVehicles/appsettings.json` e ajusta o campo `Server=...`.
 
 ### 3. Correr a aplicação
 
 - Abrir `WebAPIVehicles.sln` no Visual Studio 2022/2026
-
 - Carregar em ▶ (run)
-
 - O navegador abre em `https://localhost:7XXX`
-
-
 
 ### 4. Testar via Swagger
 
 Acrescentar `/swagger` ao URL — abre uma interface para testar todos os endpoints.
-
-
 
 ## Endpoints
 
@@ -102,8 +64,6 @@ Acrescentar `/swagger` ao URL — abre uma interface para testar todos os endpoi
 | `POST` | `/vehicles` | Cria um veículo novo |
 | `PUT` | `/vehicles/{id}` | Atualiza um veículo |
 | `DELETE` | `/vehicles/{id}` | Apaga um veículo |
-
-
 
 ## Modelo de dados
 
@@ -117,4 +77,3 @@ Tabela `Vehicles`:
 | `Year` | INT | Obrigatório |
 | `LastInspection` | DATETIME | Opcional |
 | `Sold` | BIT | 0 = não vendido, 1 = vendido |
-
