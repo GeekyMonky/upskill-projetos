@@ -17,14 +17,16 @@ Adaptação do exemplo `WebAPI5` fornecido pelo professor, com autenticação JW
 
 ## Estrutura
 
+```
 WebAPIBiblioteca/
-├── LibDB/                    # DALPro
-├── Models/                   # Entidades (7)
-├── DTOs/                     # Read + Create DTOs (16)
-├── Repositories/             # Interface + impl (14)
-├── Services/                 # Interface + impl + AuthService + DevService (16)
-├── Program.cs                # Endpoints, DI, Auth, Swagger, Serilog
-└── appsettings.json          # Connection string + chave JWT
+├── LibDB/             # DALPro
+├── Models/            # Entidades (7)
+├── DTOs/              # Read + Create DTOs (16)
+├── Repositories/      # Interface + impl (14)
+├── Services/          # Interface + impl + AuthService + DevService (16)
+├── Program.cs         # Endpoints, DI, Auth, Swagger, Serilog
+└── appsettings.json   # Connection string + chave JWT
+```
 
 ## Modelo de dados
 
