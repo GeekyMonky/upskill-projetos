@@ -20,7 +20,7 @@ Adaptação do exemplo `WebAPI2` fornecido pelo professor.
 
 - **Swagger** (Swashbuckle.AspNetCore)
 
-- **DALPro** — classe de acesso a dados (incluída em `LibDB/DALPro.cs`)
+- **DALPro** - classe de acesso a dados (incluída em `LibDB/DALPro.cs`)
 
 
 
