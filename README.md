@@ -1,6 +1,6 @@
 # Projetos do Curso
 
-Repositório com os projetos desenvolvidos ao longo do curso.
+Repositório com os projetos desenvolvidos ao longo do terceiro módulo.
 
 ## Projetos
 
